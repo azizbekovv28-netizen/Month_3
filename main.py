@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 
-BOT_TOKEN = "8997660164:AAGKIr7VbLxZPXdioqvk2J6xG2qqFj78hfE" 
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # Replace with your
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
@@ -28,7 +28,7 @@ async def cmd_about(message: Message):
     await message.answer(
         "Я новый Telegram-бот\n"
         "Я умею отвечать на команды, реагировать на определённые слова "
-        "и повторять твои сообщени, "
+        "и повторять твои сообщения "
     )
 
 @dp.message(F.text.lower() == "группа")
