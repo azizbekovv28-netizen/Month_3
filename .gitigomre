@@ -1,9 +1,0 @@
-.idea
-__pycache__/
-venv
-.env
-.vscode
-.DS_Store
-*.py[cod]
-*$py.class
-quiz.db
